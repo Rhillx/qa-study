@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <title>Life Q&A</title>
+</head>
+
+<body>
+
+    <h1 class="p-2">Life Questions and Answers</h1>
+    <a class="btn btn-primary p-2 ml-2" href="/">Health Q&A</a>
+
+
+
+    {% for qna in pair %}
+
+    <ol class="list-group m-2">
+        <li class="list-group-item">{{qna[0]}}</li>
+        <li class="list-group-item list-group-item-success">{{qna[1]}}</li>
+    </ol>
+    {% endfor %}
+
+
+
+
+</body>
+
+</html>
